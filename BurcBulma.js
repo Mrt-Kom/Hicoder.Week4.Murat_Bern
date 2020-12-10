@@ -36,3 +36,36 @@ else if ((ay==10 && gun>=24) || (ay==11 && gun<=22)){
 else {
     console.log("Yay Burcusunuz");
 }
+
+alert( 1 || 0 ); // 1 (1 doğru)
+alert( true || 'önemsiz' ); // (true doğru)
+
+alert( null || 1 ); // 1 (1 tek doğru veri)
+alert( null || 0 || 1 ); // 1 (1 tek doğru veri)
+alert( undefined || null || 0 ); // 0 (Hepsi yanlış sonuncusunu döner)
+
+// Eğer ilk opedan doğru ise her halükarda ikincinin değeri dönecek.
+alert( 1 && 0 ); // 0
+alert( 1 && 5 ); // 5
+
+
+// İlk operand yanlış ise ilk operandı döner ikinci operand pas geçilir.
+
+alert( null && 5 ); // null
+alert( 0 && "önemi yok" ); // 0
+
+
+2
+3
+4
+
+3
+4
+var sayi1 = 60;
+var sayi2 = 15;
+var sonuc = sayi1 % sayi2;
+document.write(sonuc);
+let array = [1,2,3];
+console.log(array[0]);
+console.log(array[2]);
+console.log(array[array.length/2])

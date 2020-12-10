@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+  <script >
+    randomSayi= Math.floor(Math.random()*10)+1;
+    sayac = 0;
+  while(sayac < 4)
+  { 
+    
+   vagonSayi= parseInt(prompt('Bir Vagon Numarasi Giriniz:'));
+    if (vagonSayi > randomSayi)
+    alert('Büyük Vagon Numarasi Girdiniz');
+ 
+    else if (vagonSayi < randomSayi)
+    alert('Küçük Vagon Numarasi Girdiniz');
+ 
+    else if (vagonSayi == randomSayi){
+    alert('Tebrikler!!! Hirsizi Yakaladiniz'); 
+    break;
+
+    }
+    sayac = sayac +1;
+  }
+  
+  if (sayac < 4)
+    alert((sayac+1) + "  " + "defada bildiniz" + "  " + "Puaniniz" + "  "+(100-(sayac*25)));
+  else 
+    alert("Puaniniz" + "  " + 0);
+  
+  </script>
+</body>
+</html>
